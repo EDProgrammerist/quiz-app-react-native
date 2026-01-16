@@ -77,7 +77,7 @@ Follow these steps to run the project locally.
 
 3.  **Start the server**
     ```bash
-    npx expo start -c
+    npx expo start
     ```
 
 4.  **Run the App**
