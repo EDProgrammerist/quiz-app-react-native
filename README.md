@@ -1,50 +1,110 @@
-# Welcome to your Expo app 👋
+<div align="center">
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+  # 📱 Quiz++
+  ### Master the Code
 
-## Get started
+  <br>
 
-1. Install dependencies
+  ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  ![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=FFFFFF)
+  ![Node js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-   ```bash
-   npm install
-   ```
+  <br>
+  <br>
 
-2. Start the app
+  A modern, interactive mobile quiz game built with **React Native** and **Expo**. Test your knowledge of programming languages, frameworks, and tech stacks across domains like Backend, Frontend, Mobile, and AI.
 
-   ```bash
-   npx expo start
-   ```
+</div>
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📸 Screenshots
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<div align="center">
+  <img src="path/to/home-screen.png" width="220" alt="Home Screen" />
+  <img src="path/to/quiz-screen.png" width="220" alt="Quiz Screen" />
+  <img src="path/to/learn-mode.png" width="220" alt="Learn Mode" />
 
-## Get a fresh project
+</div>
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+## ✨ Features
+
+* **🎮 Game Modes:**
+    * **Quiz Mode:** Randomly generated questions (Identify Logo, Extension, or Use Case).
+    * **Timer Pressure:** 10-second countdown per question.
+    * **Categories:** Filter questions by industry (Frontend, Backend, Mobile, AI, etc.).
+* **🏆 Persistence:**
+    * Saves **High Scores** per category using Async Storage.
+    * Remembers **Dark/Light Mode** preference.
+* **🎨 Modern UI/UX:**
+    * **Dark Mode:** Fully themed interface (auto-detects or manual toggle).
+    * **Animations:** Smooth transitions and bouncy button effects.
+    * **Sound Effects:** Custom audio for Correct, Wrong, and Game Over states.
+* **📚 Learn Mode:** A searchable dictionary of 20+ programming languages and frameworks.
+
+## 🛠️ Tech Stack
+
+* **Framework:** [React Native](https://reactnative.dev/) (via [Expo](https://expo.dev/))
+* **Navigation:** [React Navigation v6](https://reactnavigation.org/) (Native Stack)
+* **Storage:** `@react-native-async-storage/async-storage`
+* **Audio:** `expo-av`
+* **Icons:** React Native Vector Icons (via Expo)
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+* Node.js installed
+* Expo Go app on your phone (iOS/Android) OR an Emulator
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/yourusername/DevQuiz.git](https://github.com/yourusername/DevQuiz.git)
+    cd DevQuiz
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the server**
+    ```bash
+    npx expo start -c
+    ```
+
+4.  **Run the App**
+    * Scan the QR code with your phone (using Expo Go).
+    * Or press `a` for Android Emulator / `i` for iOS Simulator.
+
+## 📂 Project Structure
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Quiz++/
+├── assets/                 # Images and Sounds (correct.mp3, etc.)
+├── src/
+│   ├── context/            # Global State (ThemeContext)
+│   ├── data/               # Data Source (languages.js)
+│   └── screens/            # Application Screens
+│       ├── HomeScreen.js   # Main Menu
+│       ├── CategoryScreen.js # Topic Selection
+│       ├── QuizScreen.js   # Game Logic & Timer
+│       ├── LearnScreen.js  # Searchable Dictionary
+│       └── DetailsScreen.js # Language Info View
+├── App.js                  # Navigation Entry Point
+└── app.json                # Expo Configuration
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+## 🧩 Categories
+- [Backend] (Node.js, Python, Java, Go, PHP)
+- [Frontend] (JavaScript, TypeScript, React, Vue, Angular)
+- [Mobile] (Swift, Kotlin, Dart/Flutter)
+- [Systems] (C, C++, Rust)
+- [Data] & [AI] (Python, R, Julia)
+- [Cloud] & [DevOps] (Go, Bash, Terraform)
